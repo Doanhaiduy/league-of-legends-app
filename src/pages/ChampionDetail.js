@@ -22,7 +22,7 @@ function ChampionDetail() {
     return (
         <div className="mt-[90px] ">
             <div
-                className="w-full h-[120vh]  bg-cover text-[#fff] relative "
+                className="w-full h-[110vh] lg:h-[120vh]  bg-cover text-[#fff] relative "
                 style={{
                     backgroundImage: `url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg')`,
                 }}
