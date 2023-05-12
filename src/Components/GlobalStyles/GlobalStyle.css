@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
+body {
+    font-family: "BeaufortforLOL-Regular", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.group-img:hover img {
+    transform: scale(1.1) skew(0deg);
+    filter: blur(6px);
+}
+
+.group-img:hover .group-button {
+    display: flex;
+}
+
+.page-champions {
+    background-image: url(../../assets/imgs/summonersrift.jpg);
+    background-size: cover;
+}
+
+.page-collection {
+    background-image: url(../../assets/imgs/background-collection.png);
+    background-size: cover;
+}
+
+.slick-arrow.slick-prev {
+    margin-left: 12px;
+}
+
+.slick-arrow.slick-prev::before {
+    font-size: 30px;
+}
+
+.slick-arrow.slick-next {
+    margin-right: 24px;
+}
+
+.slick-arrow.slick-next::before {
+    font-size: 30px;
+}
+
+.detail {
+    background-image: url(../../assets/imgs/Star-Guardian-Key-Visual-1.jpg);
+    background-size: cover;
+}
+
+.slick-track {
+    margin-bottom: 50px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #3b82f6;
+}

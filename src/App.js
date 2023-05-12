@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import ChampionDetail from "./pages/ChampionDetail";
+import Champions from "./pages/Champions";
+import Collection from "./pages/Collection";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="app">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/champions" element={<Champions />} />
+                    <Route path="/champion-detail/:id" element={<ChampionDetail />} />
+                    <Route path="/collection" element={<Collection />} />
+                    <Route path="/search" element={<Search />} />
+                </Routes>
+                <Footer />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
