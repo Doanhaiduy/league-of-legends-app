@@ -11,7 +11,7 @@ function ListChampion() {
     const [state, dispatch] = useContext(AppContext);
 
     const fetchApi = async (moreChamp, keySearch) => {
-        await fetch("http://ddragon.leagueoflegends.com/cdn/13.9.1/data/en_US/champion.json")
+        await fetch("https://ddragon.leagueoflegends.com/cdn/13.9.1/data/en_US/champion.json")
             .then((response) => response.json())
             .then((data) => {
                 const champions = Object.values(data.data);
